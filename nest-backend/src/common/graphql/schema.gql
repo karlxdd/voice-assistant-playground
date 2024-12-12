@@ -1,0 +1,16 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Product {
+  id: ID!
+  sku: String!
+  name: String!
+  remainingGoods: Int!
+}
+
+type Query {
+  getAllProducts: [Product!]!
+  getProductBySku(sku: String!): Product
+  handleVoiceCommand(command: String!): String!
+}
